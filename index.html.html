@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie&display=swap" rel="stylesheet">
+    <title>calculator</title>
+    <style>
+        body{
+            background-image: url('../../cal_bg4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1{
+            margin-left: 440px;
+            font-family: "Elsie", Helvetica, Arial, sans-serif;
+            text-shadow: 2px 2px 5px rgb(84,110,121);
+        }
+        .formstyle{
+            height: 520px;
+            width: 350px;
+            border: 5px double paleturquoise;
+            background-color: rgb(84,110,121);
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin: auto;
+            font-family: "Elsie", Helvetica, Arial, sans-serif;
+            box-shadow: 10px 10px 4px rgb(84,110,121);
+        }
+
+        .io-box{
+            height: 70px;
+            width: 340px;
+            margin-left:1px;
+            border: 3px solid plum;
+            border-radius: 5px;
+            background-color: rgb(42,54,62);
+            color: aqua;
+            font-size: 30px;
+            font-family: "Elsie", Helvetica, Arial, sans-serif;
+            
+            
+        }
+
+        .calc-btn{
+            width: 114px;
+            height: 55px;
+            border: 2px solid plum;
+            border-radius: 5px;
+            background-color:rgb(99,121,135);
+            color: aqua;
+            font-size: 30px;
+            font-family: "Elsie", Helvetica, Arial, sans-serif;
+
+        }
+
+        .clear{
+            width: 120px;
+            height:55px;
+            margin-left: 110px;
+            color: aqua;
+            font-size: 30px;
+            border: 3px solid plum;
+            border-radius: 5px;
+             background-color:rgb(99,121,135);
+             font-family: "Elsie", Helvetica, Arial, sans-serif;
+        }
+
+        @media screen and (min-width: 480px) {
+ 
+            h1{
+            margin-left:60px;
+            font-family: "Elsie", Helvetica, Arial, sans-serif;
+            text-shadow: 2px 2px 5px rgb(84,110,121);
+        }
+
+
+
+        }
+
+    
+
+        
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator with HTML CSS and JavaScript</h1>
+    <div class="formstyle">
+        
+        <form name="forms">
+
+        <input type="text" name="answer" class="io-box"><br><br>
+
+        <input type="button" value=" 1 " onclick=" forms.answer.value += '1' " class="calc-btn">
+        <input type="button" value=" 2 " onclick=" forms.answer.value += '2' " class="calc-btn">
+        <input type="button" value=" 3 " onclick=" forms.answer.value += '3' " class="calc-btn">
+        <br>
+        <br>
+
+        <input type="button" value=" 4 " onclick=" forms.answer.value += '4' " class="calc-btn">
+        <input type="button" value=" 5 " onclick=" forms.answer.value += '5' " class="calc-btn">
+        <input type="button" value=" 6 " onclick=" forms.answer.value += '6' " class="calc-btn">
+        <br>
+        <br>
+
+        <input type="button" value=" 7 " onclick=" forms.answer.value += '7' " class="calc-btn">
+        <input type="button" value=" 8 " onclick=" forms.answer.value += '8' " class="calc-btn">
+        <input type="button" value=" 9 " onclick=" forms.answer.value += '9' " class="calc-btn">
+        <br>
+        <br>
+
+        <input type="button" value=" 0 " onclick=" forms.answer.value += '0' " class="calc-btn">
+        <input type="button" value=" + " onclick=" forms.answer.value += '+' " class="calc-btn">
+        <input type="button" value=" - " onclick=" forms.answer.value += '-' " class="calc-btn">
+        <br>
+        <br>
+
+        <input type="button" value=" * " onclick=" forms.answer.value += '*' " class="calc-btn">
+        <input type="button" value=" / " onclick=" forms.answer.value += '/' " class="calc-btn">
+        <input type="button" value=" = " onclick=" forms.answer.value = eval(forms.answer.value)" class="calc-btn">
+        <br>
+        <br>
+
+        <input type="button" class="clear" value="C" onclick="forms.answer.value = '' ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+   
+
+    <script>
+
+        
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
